@@ -1,16 +1,16 @@
 import React from 'react';
 import { NavigationDots, SocialMedia } from '../components';
 
-const AppWrap = (Component, idName, classNames) => function HOC() {
+const AppWrap = (Component, idName, classNames,textColor = false) => function HOC() {
   return (
     <div id={idName} className={`app__container ${classNames}`}>
       <SocialMedia />
       <div className="app__wrapper app__flex">
         <Component />
 
-        <div className="copyright">
-          <p className="p-text">@2020 MICHAEL</p>
-          <p className="p-text">All rights reserved</p>
+        <div className="copyright" >
+          <p style={textColor ? {color: 'black'} : {}} className="p-text">@2021 SHEHPER SAMEER</p>
+          <p style={textColor ? {color: 'black'}: {}} className="p-text">All rights reserved</p>
         </div>
       </div>
       <NavigationDots active={idName} />
