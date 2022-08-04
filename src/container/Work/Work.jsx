@@ -89,7 +89,7 @@ const Work = () => {
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
-                    <AiFillEye />
+                    <AiFillEye style={{ color: "white" }} />
                   </motion.div>
                 </a>
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
@@ -99,7 +99,7 @@ const Work = () => {
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
-                    <AiFillGithub />
+                    <AiFillGithub style={{ color: "white" }} />
                   </motion.div>
                 </a>
               </motion.div>
